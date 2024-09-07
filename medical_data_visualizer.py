@@ -28,16 +28,9 @@ def draw_cat_plot():
     # 7
     fig = sns.catplot(x = 'variable', y = 'total', data = df_cat, hue = 'value', kind = 'bar', col = 'cardio').figure
 
-
-
-    # 8
-    fig = None
-
-
     # 9
     fig.savefig('catplot.png')
     return fig
-
 
 # 10
 def draw_heat_map():
